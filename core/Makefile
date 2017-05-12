@@ -2018,7 +2018,7 @@ bacon: otapackage
 	@echo -e ""
 	@echo -e "                                                      Project"
 	@echo -e ""
-	@echo -e "ZIP: $(ZIP_LOCATION)"
+	@echo -e "ZIP: $(CUSTOM_TARGET_PACKAGE)"
 	@echo -e "SIZE: "`ls -hal $(CUSTOM_TARGET_PACKAGE) | cut -d ' ' -f 5`
 	@echo -e "MD5: "`cat $(CUSTOM_TARGET_PACKAGE).md5sum | cut -d ' ' -f 1`
 	@echo -e ${CL_RST}
